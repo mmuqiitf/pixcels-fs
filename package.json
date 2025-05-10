@@ -1,0 +1,26 @@
+{
+  "name": "vue-starter-express",
+  "version": "0.0.1",
+  "description": "Starter template for Vue.js projects with express backend.",
+  "main": "server.js",
+  "scripts": {
+    "start": "npm run compile && node server.js",
+    "compile": "browserify -t vueify -e src/main.js -o public/build.js"
+  },
+  "dependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-es2015": "^6.24.1",
+    "browserify": "^16.2.3",
+    "express": "^4.16.4",
+    "vue": "^2.6.8",
+    "vue-router": "^3.6.5",
+    "vueify": "^9.4.1"
+  },
+  "license": "MIT",
+  "keywords": [
+    "node",
+    "glitch",
+    "express",
+    "vue"
+  ]
+}

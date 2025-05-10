@@ -1,0 +1,76 @@
+<template>
+	<div>
+		<h1>Movies</h1>
+		<div class="movie-list">
+			<div
+				v-for="movie in movies"
+				:key="movie.id"
+				class="movie-item"
+				@click="viewMovie(movie.id)"
+			>
+				<h2>{{ movie.title }}</h2>
+				<p class="tagline">{{ movie.tagline }}</p>
+				<p class="rating">
+					<strong>Rating:</strong> {{ movie.vote_average }}/10
+				</p>
+			</div>
+		</div>
+	</div>
+</template>
+
+<script>
+module.exports = {
+	data: function () {
+		return {
+			movies: [],
+		};
+	},
+	created: function () {
+		fetch("/api/movies")
+			.then(function (response) {
+				return response.json();
+			})
+			.then(
+				function (data) {
+					this.movies = data;
+				}.bind(this)
+			);
+	},
+	methods: {
+		viewMovie: function (id) {
+			this.$router.push("/movie/" + id);
+		},
+	},
+};
+</script>
+
+<style>
+h1 {
+	text-align: center;
+	margin-bottom: 30px;
+}
+.movie-list {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+	gap: 20px;
+}
+.movie-item {
+	border: 1px solid #ddd;
+	border-radius: 8px;
+	padding: 15px;
+	cursor: pointer;
+	transition: transform 0.2s, box-shadow 0.2s;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.movie-item:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+.tagline {
+	color: #666;
+	font-style: italic;
+}
+.rating {
+	color: #e67e22;
+}
+</style>
