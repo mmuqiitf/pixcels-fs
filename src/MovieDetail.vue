@@ -83,77 +83,76 @@
 	</div>
 </template>
 
-<script>
-module.exports = {
-	data: function () {
-		return {
-			movie: {},
-		};
-	},
-	created: function () {
-		var movieId = this.$route.params.id;
-		fetch("/api/movies/" + movieId)
-			.then(function (response) {
-				return response.json();
-			})
-			.then(
-				function (data) {
-					this.movie = data;
-				}.bind(this)
-			);
-	},
-	methods: {
-		formatDate: function (dateString) {
-			if (!dateString) return "N/A";
+<script lang="ts">
+import Vue from "vue";
+import { Component } from "vue-property-decorator";
+import { Movie } from "./types";
 
-			// Handle dates in format DD/M/YY (like "19/7/95")
-			if (dateString.includes("/")) {
-				const parts = dateString.split("/");
-				if (parts.length === 3) {
-					const day = parseInt(parts[0], 10);
-					const month = parseInt(parts[1], 10) - 1; // Months are 0-indexed in JS
-					let year = parseInt(parts[2], 10);
+@Component
+export default class MovieDetail extends Vue {
+	movie: Movie = {} as Movie;
 
-					// Handle 2-digit years - if year is less than 100, assume it's 19XX for years >= 30, 20XX for years < 30
-					if (year < 100) {
-						year = year >= 30 ? 1900 + year : 2000 + year;
-					}
+	created(): void {
+		const movieId = this.$route.params.id;
+		fetch(`/api/movies/${movieId}`)
+			.then((response) => response.json())
+			.then((data) => {
+				this.movie = data;
+			});
+	}
 
-					const date = new Date(year, month, day);
+	formatDate(dateString: string): string {
+		if (!dateString) return "N/A";
 
-					// Check if date is valid before formatting
-					if (!isNaN(date.getTime())) {
-						return date.toLocaleDateString(undefined, {
-							year: "numeric",
-							month: "long",
-							day: "numeric",
-						});
-					}
+		// Handle dates in format DD/M/YY (like "19/7/95")
+		if (dateString.includes("/")) {
+			const parts = dateString.split("/");
+			if (parts.length === 3) {
+				const day = parseInt(parts[0], 10);
+				const month = parseInt(parts[1], 10) - 1; // Months are 0-indexed in JS
+				let year = parseInt(parts[2], 10);
+
+				// Handle 2-digit years - if year is less than 100, assume it's 19XX for years >= 30, 20XX for years < 30
+				if (year < 100) {
+					year = year >= 30 ? 1900 + year : 2000 + year;
 				}
-				return dateString; // Return original if parsing failed
-			}
 
-			// For standard ISO date format
-			const date = new Date(dateString);
-			if (!isNaN(date.getTime())) {
-				return date.toLocaleDateString(undefined, {
-					year: "numeric",
-					month: "long",
-					day: "numeric",
-				});
-			}
+				const date = new Date(year, month, day);
 
-			return dateString; // Return original string if all parsing attempts fail
-		},
-		formatCurrency: function (value) {
-			if (!value) return "N/A";
-			return value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-		},
-		goBack: function () {
-			this.$router.push("/");
-		},
-	},
-};
+				// Check if date is valid before formatting
+				if (!isNaN(date.getTime())) {
+					return date.toLocaleDateString(undefined, {
+						year: "numeric",
+						month: "long",
+						day: "numeric",
+					});
+				}
+			}
+			return dateString; // Return original if parsing failed
+		}
+
+		// For standard ISO date format
+		const date = new Date(dateString);
+		if (!isNaN(date.getTime())) {
+			return date.toLocaleDateString(undefined, {
+				year: "numeric",
+				month: "long",
+				day: "numeric",
+			});
+		}
+
+		return dateString; // Return original string if all parsing attempts fail
+	}
+
+	formatCurrency(value: number | string): string {
+		if (!value) return "N/A";
+		return value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+	}
+
+	goBack(): void {
+		this.$router.push("/");
+	}
+}
 </script>
 
 <style>

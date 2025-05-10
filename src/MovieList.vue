@@ -18,30 +18,27 @@
 	</div>
 </template>
 
-<script>
-module.exports = {
-	data: function () {
-		return {
-			movies: [],
-		};
-	},
-	created: function () {
+<script lang="ts">
+import Vue from "vue";
+import { Component } from "vue-property-decorator";
+import { MovieListItem } from "./types";
+
+@Component
+export default class MovieList extends Vue {
+	movies: MovieListItem[] = [];
+
+	created(): void {
 		fetch("/api/movies")
-			.then(function (response) {
-				return response.json();
-			})
-			.then(
-				function (data) {
-					this.movies = data;
-				}.bind(this)
-			);
-	},
-	methods: {
-		viewMovie: function (id) {
-			this.$router.push("/movie/" + id);
-		},
-	},
-};
+			.then((response) => response.json())
+			.then((data) => {
+				this.movies = data as MovieListItem[];
+			});
+	}
+
+	viewMovie(id: number): void {
+		this.$router.push("/movie/" + id);
+	}
+}
 </script>
 
 <style>
