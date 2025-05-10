@@ -22,124 +22,329 @@ __webpack_require__.r(__webpack_exports__);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
 ___CSS_LOADER_EXPORT___.push([module.id, `
-.movie-detail {
-	max-width: 800px;
-	margin: 0 auto;
-	padding: 20px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* General body styles for consistent background and font */
+body {
+	background-color: #f8f9fa; /* Light, neutral background */
+	font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+		Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue",
+		sans-serif; /* Modern, minimalist font stack */
+	color: #343a40; /* Darker grey for text */
 }
-.movie-content {
-	background-color: #f9f9f9;
-	border-radius: 8px;
-	padding: 25px;
-	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+.movie-detail-page {
+	max-width: 800px; /* Slightly reduced max-width for a more focused view */
+	margin: 30px auto; /* Adjusted margin */
+	padding: 25px; /* Adjusted padding */
+	background-color: #ffffff;
+	border-radius: 8px; /* Subtle rounding */
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* Softer shadow */
 }
-h1 {
+.movie-content h1 {
+	font-size: 2.2rem; /* Slightly reduced title size */
 	margin-bottom: 10px;
-	color: #333;
-}
-h3 {
-	margin-top: 20px;
-	margin-bottom: 10px;
-	color: #444;
-	border-bottom: 1px solid #eee;
-	padding-bottom: 5px;
+	color: #212529; /* Very dark grey */
+	font-weight: 500; /* Lighter font weight */
+	text-align: center;
 }
 .tagline {
-	font-size: 1.2em;
-	font-style: italic;
-	color: #666;
-	margin-bottom: 20px;
-	border-bottom: 1px solid #ddd;
+	font-size: 1.1em;
+	font-style: normal; /* Removed italic for a cleaner look */
+	color: #6c757d; /* Muted grey */
+	margin-bottom: 25px;
+	text-align: center;
 	padding-bottom: 15px;
+	border-bottom: 1px solid #e9ecef; /* Lighter border */
 }
 .movie-meta {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-	gap: 15px;
-	margin-bottom: 20px;
-	background-color: #f0f0f0;
-	padding: 15px;
+	gap: 15px; /* Reduced gap */
+	margin-bottom: 25px;
+	padding: 15px; /* Reduced padding */
+	background-color: #f8f9fa; /* Light background for meta section */
 	border-radius: 6px;
 }
 .meta-item {
-	padding: 8px;
+	padding: 10px;
 	background-color: #fff;
+	border: 1px solid #e9ecef; /* Subtle border */
 	border-radius: 4px;
-	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+	font-size: 0.9rem; /* Slightly smaller font */
 }
-.movie-details {
-	margin: 25px 0;
+.meta-item strong {
+	color: #343a40;
+	font-weight: 500; /* Lighter strong weight */
 }
-.movie-overview {
-	margin-bottom: 20px;
+.movie-main-details h3 {
+	font-size: 1.2rem; /* Reduced section title size */
+	color: #343a40;
+	margin-top: 25px;
+	margin-bottom: 12px;
+	border-bottom: 1px solid #dee2e6; /* Lighter accent border */
+	padding-bottom: 6px;
+	font-weight: 500;
+}
+.movie-overview p {
+	font-size: 1rem; /* Standardized overview text size */
+	line-height: 1.6; /* Improved line spacing */
+	color: #495057; /* Slightly lighter text color */
 }
 .genres ul,
 .production ul,
 .languages ul {
 	display: flex;
 	flex-wrap: wrap;
-	gap: 10px;
+	gap: 8px; /* Reduced gap */
 	padding-left: 0;
 	list-style: none;
 }
 .genres li,
 .production li,
 .languages li {
-	background-color: #e0e0e0;
-	padding: 5px 10px;
-	border-radius: 15px;
-	font-size: 0.9em;
+	background-color: #e9ecef; /* Lighter background for list items */
+	color: #343a40;
+	padding: 6px 12px; /* Adjusted padding */
+	border-radius: 4px; /* Less rounded */
+	font-size: 0.85em;
 }
 .additional-info {
-	margin-top: 20px;
+	margin-top: 25px;
+	padding-top: 15px;
+	border-top: 1px solid #e9ecef; /* Lighter separator */
+}
+.info-block {
+	/* Added class for consistent spacing */
+	margin-bottom: 12px;
+}
+.additional-info h3 {
+	border-bottom: none;
+	margin-bottom: 6px;
+	font-size: 1.1rem; /* Slightly smaller */
 }
 .additional-info a {
-	color: #3498db;
+	color: #007bff; /* Standard blue for links */
 	word-break: break-all;
+	text-decoration: none;
+}
+.additional-info a:hover {
+	text-decoration: underline;
 }
 .back-button {
-	background-color: #3498db;
+	display: block;
+	margin: 30px auto 0;
+	background-color: #007bff; /* Standard blue */
 	color: white;
 	border: none;
-	padding: 10px 20px;
+	padding: 10px 20px; /* Adjusted padding */
 	border-radius: 4px;
 	cursor: pointer;
 	font-size: 1em;
-	transition: background-color 0.3s;
-	margin-top: 20px;
+	transition: background-color 0.2s ease;
 }
 .back-button:hover {
-	background-color: #2980b9;
+	background-color: #0056b3; /* Darker blue on hover */
 }
 .loading {
 	text-align: center;
-	font-size: 1.2em;
+	font-size: 1.1em; /* Slightly smaller loading text */
 	padding: 40px;
-	color: #666;
+	color: #6c757d;
 }
 
-/* Responsive design for smaller screens */
-@media (max-width: 600px) {
-.movie-meta {
-		grid-template-columns: 1fr;
-}
-.movie-content {
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+.movie-detail-page {
+		margin: 15px;
 		padding: 15px;
 }
-h1 {
+.movie-content h1 {
 		font-size: 1.8rem;
 }
 .tagline {
-		font-size: 1rem;
+		font-size: 1em;
 }
-.genres ul,
-	.production ul,
-	.languages ul {
-		flex-direction: column;
-		gap: 5px;
+.movie-meta {
+		grid-template-columns: 1fr; /* Stack meta items */
+}
+.movie-main-details h3 {
+		font-size: 1.1rem;
 }
 }
-`, "",{"version":3,"sources":["webpack://./src/MovieDetail.vue"],"names":[],"mappings":";AA8JA;CACA,gBAAA;CACA,cAAA;CACA,aAAA;AACA;AAEA;CACA,yBAAA;CACA,kBAAA;CACA,aAAA;CACA,yCAAA;AACA;AAEA;CACA,mBAAA;CACA,WAAA;AACA;AAEA;CACA,gBAAA;CACA,mBAAA;CACA,WAAA;CACA,6BAAA;CACA,mBAAA;AACA;AAEA;CACA,gBAAA;CACA,kBAAA;CACA,WAAA;CACA,mBAAA;CACA,6BAAA;CACA,oBAAA;AACA;AAEA;CACA,aAAA;CACA,2DAAA;CACA,SAAA;CACA,mBAAA;CACA,yBAAA;CACA,aAAA;CACA,kBAAA;AACA;AAEA;CACA,YAAA;CACA,sBAAA;CACA,kBAAA;CACA,wCAAA;AACA;AAEA;CACA,cAAA;AACA;AAEA;CACA,mBAAA;AACA;AAEA;;;CAGA,aAAA;CACA,eAAA;CACA,SAAA;CACA,eAAA;CACA,gBAAA;AACA;AAEA;;;CAGA,yBAAA;CACA,iBAAA;CACA,mBAAA;CACA,gBAAA;AACA;AAEA;CACA,gBAAA;AACA;AAEA;CACA,cAAA;CACA,qBAAA;AACA;AAEA;CACA,yBAAA;CACA,YAAA;CACA,YAAA;CACA,kBAAA;CACA,kBAAA;CACA,eAAA;CACA,cAAA;CACA,iCAAA;CACA,gBAAA;AACA;AAEA;CACA,yBAAA;AACA;AAEA;CACA,kBAAA;CACA,gBAAA;CACA,aAAA;CACA,WAAA;AACA;;AAEA,0CAAA;AACA;AACA;EACA,0BAAA;AACA;AAEA;EACA,aAAA;AACA;AAEA;EACA,iBAAA;AACA;AAEA;EACA,eAAA;AACA;AAEA;;;EAGA,sBAAA;EACA,QAAA;AACA;AACA","sourcesContent":["<template>\r\n\t<div class=\"movie-detail\">\r\n\t\t<div v-if=\"movie.id\" class=\"movie-content\">\r\n\t\t\t<h1>{{ movie.title }}</h1>\r\n\t\t\t<p class=\"tagline\">{{ movie.tagline }}</p>\r\n\r\n\t\t\t<div class=\"movie-meta\">\r\n\t\t\t\t<div class=\"meta-item\">\r\n\t\t\t\t\t<strong>Release Date:</strong> {{ formatDate(movie.release_date) }}\r\n\t\t\t\t</div>\r\n\t\t\t\t<div class=\"meta-item\">\r\n\t\t\t\t\t<strong>Runtime:</strong> {{ movie.runtime }} minutes\r\n\t\t\t\t</div>\r\n\t\t\t\t<div class=\"meta-item\">\r\n\t\t\t\t\t<strong>Rating:</strong> {{ movie.vote_average }}/10\r\n\t\t\t\t</div>\r\n\t\t\t\t<div class=\"meta-item\">\r\n\t\t\t\t\t<strong>Vote Count:</strong> {{ movie.vote_count }}\r\n\t\t\t\t</div>\r\n\t\t\t\t<div class=\"meta-item\"><strong>Status:</strong> {{ movie.status }}</div>\r\n\t\t\t</div>\r\n\r\n\t\t\t<div class=\"movie-details\">\r\n\t\t\t\t<div class=\"movie-overview\">\r\n\t\t\t\t\t<h3>Overview</h3>\r\n\t\t\t\t\t<p>{{ movie.overview }}</p>\r\n\t\t\t\t</div>\r\n\r\n\t\t\t\t<div class=\"genres\" v-if=\"movie.genres && movie.genres.length\">\r\n\t\t\t\t\t<h3>Genres</h3>\r\n\t\t\t\t\t<ul>\r\n\t\t\t\t\t\t<li v-for=\"genre in movie.genres\" :key=\"genre.id\">\r\n\t\t\t\t\t\t\t{{ genre.name }}\r\n\t\t\t\t\t\t</li>\r\n\t\t\t\t\t</ul>\r\n\t\t\t\t</div>\r\n\r\n\t\t\t\t<div\r\n\t\t\t\t\tclass=\"production\"\r\n\t\t\t\t\tv-if=\"movie.production_companies && movie.production_companies.length\"\r\n\t\t\t\t>\r\n\t\t\t\t\t<h3>Production Companies</h3>\r\n\t\t\t\t\t<ul>\r\n\t\t\t\t\t\t<li v-for=\"company in movie.production_companies\" :key=\"company.id\">\r\n\t\t\t\t\t\t\t{{ company.name }}\r\n\t\t\t\t\t\t</li>\r\n\t\t\t\t\t</ul>\r\n\t\t\t\t</div>\r\n\r\n\t\t\t\t<div\r\n\t\t\t\t\tclass=\"languages\"\r\n\t\t\t\t\tv-if=\"movie.spoken_languages && movie.spoken_languages.length\"\r\n\t\t\t\t>\r\n\t\t\t\t\t<h3>Spoken Languages</h3>\r\n\t\t\t\t\t<ul>\r\n\t\t\t\t\t\t<li v-for=\"lang in movie.spoken_languages\" :key=\"lang.iso_639_1\">\r\n\t\t\t\t\t\t\t{{ lang.name }}\r\n\t\t\t\t\t\t</li>\r\n\t\t\t\t\t</ul>\r\n\t\t\t\t</div>\r\n\r\n\t\t\t\t<div class=\"additional-info\">\r\n\t\t\t\t\t<div v-if=\"movie.homepage\">\r\n\t\t\t\t\t\t<h3>Homepage</h3>\r\n\t\t\t\t\t\t<a\r\n\t\t\t\t\t\t\t:href=\"movie.homepage\"\r\n\t\t\t\t\t\t\ttarget=\"_blank\"\r\n\t\t\t\t\t\t\trel=\"noopener noreferrer\"\r\n\t\t\t\t\t\t\t>{{ movie.homepage }}</a\r\n\t\t\t\t\t\t>\r\n\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t<div v-if=\"movie.imdb_id\">\r\n\t\t\t\t\t\t<h3>IMDB ID</h3>\r\n\t\t\t\t\t\t<p>{{ movie.imdb_id }}</p>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\r\n\t\t\t<button @click=\"goBack\" class=\"back-button\">Back to Movies</button>\r\n\t\t</div>\r\n\t\t<div v-else class=\"loading\">Loading movie details...</div>\r\n\t</div>\r\n</template>\r\n\r\n<script lang=\"ts\">\r\nimport Vue from \"vue\";\r\nimport { Component } from \"vue-property-decorator\";\r\nimport { Movie } from \"./types\";\r\n\r\n@Component\r\nexport default class MovieDetail extends Vue {\r\n\tmovie: Movie = {} as Movie;\r\n\r\n\tcreated(): void {\r\n\t\tconst movieId = this.$route.params.id;\r\n\t\tfetch(`/api/movies/${movieId}`)\r\n\t\t\t.then((response) => response.json())\r\n\t\t\t.then((data) => {\r\n\t\t\t\tthis.movie = data;\r\n\t\t\t});\r\n\t}\r\n\r\n\tformatDate(dateString: string): string {\r\n\t\tif (!dateString) return \"N/A\";\r\n\r\n\t\t// Handle dates in format DD/M/YY (like \"19/7/95\")\r\n\t\tif (dateString.includes(\"/\")) {\r\n\t\t\tconst parts = dateString.split(\"/\");\r\n\t\t\tif (parts.length === 3) {\r\n\t\t\t\tconst day = parseInt(parts[0], 10);\r\n\t\t\t\tconst month = parseInt(parts[1], 10) - 1; // Months are 0-indexed in JS\r\n\t\t\t\tlet year = parseInt(parts[2], 10);\r\n\r\n\t\t\t\t// Handle 2-digit years - if year is less than 100, assume it's 19XX for years >= 30, 20XX for years < 30\r\n\t\t\t\tif (year < 100) {\r\n\t\t\t\t\tyear = year >= 30 ? 1900 + year : 2000 + year;\r\n\t\t\t\t}\r\n\r\n\t\t\t\tconst date = new Date(year, month, day);\r\n\r\n\t\t\t\t// Check if date is valid before formatting\r\n\t\t\t\tif (!isNaN(date.getTime())) {\r\n\t\t\t\t\treturn date.toLocaleDateString(undefined, {\r\n\t\t\t\t\t\tyear: \"numeric\",\r\n\t\t\t\t\t\tmonth: \"long\",\r\n\t\t\t\t\t\tday: \"numeric\",\r\n\t\t\t\t\t});\r\n\t\t\t\t}\r\n\t\t\t}\r\n\t\t\treturn dateString; // Return original if parsing failed\r\n\t\t}\r\n\r\n\t\t// For standard ISO date format\r\n\t\tconst date = new Date(dateString);\r\n\t\tif (!isNaN(date.getTime())) {\r\n\t\t\treturn date.toLocaleDateString(undefined, {\r\n\t\t\t\tyear: \"numeric\",\r\n\t\t\t\tmonth: \"long\",\r\n\t\t\t\tday: \"numeric\",\r\n\t\t\t});\r\n\t\t}\r\n\r\n\t\treturn dateString; // Return original string if all parsing attempts fail\r\n\t}\r\n\r\n\tformatCurrency(value: number | string): string {\r\n\t\tif (!value) return \"N/A\";\r\n\t\treturn value.toString().replace(/\\B(?=(\\d{3})+(?!\\d))/g, \",\");\r\n\t}\r\n\r\n\tgoBack(): void {\r\n\t\tthis.$router.push(\"/\");\r\n\t}\r\n}\r\n</script>\r\n\r\n<style>\r\n.movie-detail {\r\n\tmax-width: 800px;\r\n\tmargin: 0 auto;\r\n\tpadding: 20px;\r\n}\r\n\r\n.movie-content {\r\n\tbackground-color: #f9f9f9;\r\n\tborder-radius: 8px;\r\n\tpadding: 25px;\r\n\tbox-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);\r\n}\r\n\r\nh1 {\r\n\tmargin-bottom: 10px;\r\n\tcolor: #333;\r\n}\r\n\r\nh3 {\r\n\tmargin-top: 20px;\r\n\tmargin-bottom: 10px;\r\n\tcolor: #444;\r\n\tborder-bottom: 1px solid #eee;\r\n\tpadding-bottom: 5px;\r\n}\r\n\r\n.tagline {\r\n\tfont-size: 1.2em;\r\n\tfont-style: italic;\r\n\tcolor: #666;\r\n\tmargin-bottom: 20px;\r\n\tborder-bottom: 1px solid #ddd;\r\n\tpadding-bottom: 15px;\r\n}\r\n\r\n.movie-meta {\r\n\tdisplay: grid;\r\n\tgrid-template-columns: repeat(auto-fit, minmax(200px, 1fr));\r\n\tgap: 15px;\r\n\tmargin-bottom: 20px;\r\n\tbackground-color: #f0f0f0;\r\n\tpadding: 15px;\r\n\tborder-radius: 6px;\r\n}\r\n\r\n.meta-item {\r\n\tpadding: 8px;\r\n\tbackground-color: #fff;\r\n\tborder-radius: 4px;\r\n\tbox-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);\r\n}\r\n\r\n.movie-details {\r\n\tmargin: 25px 0;\r\n}\r\n\r\n.movie-overview {\r\n\tmargin-bottom: 20px;\r\n}\r\n\r\n.genres ul,\r\n.production ul,\r\n.languages ul {\r\n\tdisplay: flex;\r\n\tflex-wrap: wrap;\r\n\tgap: 10px;\r\n\tpadding-left: 0;\r\n\tlist-style: none;\r\n}\r\n\r\n.genres li,\r\n.production li,\r\n.languages li {\r\n\tbackground-color: #e0e0e0;\r\n\tpadding: 5px 10px;\r\n\tborder-radius: 15px;\r\n\tfont-size: 0.9em;\r\n}\r\n\r\n.additional-info {\r\n\tmargin-top: 20px;\r\n}\r\n\r\n.additional-info a {\r\n\tcolor: #3498db;\r\n\tword-break: break-all;\r\n}\r\n\r\n.back-button {\r\n\tbackground-color: #3498db;\r\n\tcolor: white;\r\n\tborder: none;\r\n\tpadding: 10px 20px;\r\n\tborder-radius: 4px;\r\n\tcursor: pointer;\r\n\tfont-size: 1em;\r\n\ttransition: background-color 0.3s;\r\n\tmargin-top: 20px;\r\n}\r\n\r\n.back-button:hover {\r\n\tbackground-color: #2980b9;\r\n}\r\n\r\n.loading {\r\n\ttext-align: center;\r\n\tfont-size: 1.2em;\r\n\tpadding: 40px;\r\n\tcolor: #666;\r\n}\r\n\r\n/* Responsive design for smaller screens */\r\n@media (max-width: 600px) {\r\n\t.movie-meta {\r\n\t\tgrid-template-columns: 1fr;\r\n\t}\r\n\r\n\t.movie-content {\r\n\t\tpadding: 15px;\r\n\t}\r\n\r\n\th1 {\r\n\t\tfont-size: 1.8rem;\r\n\t}\r\n\r\n\t.tagline {\r\n\t\tfont-size: 1rem;\r\n\t}\r\n\r\n\t.genres ul,\r\n\t.production ul,\r\n\t.languages ul {\r\n\t\tflex-direction: column;\r\n\t\tgap: 5px;\r\n\t}\r\n}\r\n</style>\r\n"],"sourceRoot":""}]);
+@media (max-width: 480px) {
+.movie-content h1 {
+		font-size: 1.6rem;
+}
+.tagline {
+		font-size: 0.9em;
+}
+.back-button {
+		padding: 8px 15px;
+		font-size: 0.9em;
+}
+.meta-item {
+		font-size: 0.85rem;
+}
+.movie-overview p {
+		font-size: 0.95rem;
+}
+}
+`, "",{"version":3,"sources":["webpack://./src/MovieDetail.vue"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AA8JA,2DAAA;AACA;CACA,yBAAA,EAAA,8BAAA;CACA;;YAEA,EAAA,kCAAA;CACA,cAAA,EAAA,yBAAA;AACA;AAEA;CACA,gBAAA,EAAA,uDAAA;CACA,iBAAA,EAAA,oBAAA;CACA,aAAA,EAAA,qBAAA;CACA,yBAAA;CACA,kBAAA,EAAA,oBAAA;CACA,0CAAA,EAAA,kBAAA;AACA;AAEA;CACA,iBAAA,EAAA,gCAAA;CACA,mBAAA;CACA,cAAA,EAAA,mBAAA;CACA,gBAAA,EAAA,wBAAA;CACA,kBAAA;AACA;AAEA;CACA,gBAAA;CACA,kBAAA,EAAA,sCAAA;CACA,cAAA,EAAA,eAAA;CACA,mBAAA;CACA,kBAAA;CACA,oBAAA;CACA,gCAAA,EAAA,mBAAA;AACA;AAEA;CACA,aAAA;CACA,2DAAA;CACA,SAAA,EAAA,gBAAA;CACA,mBAAA;CACA,aAAA,EAAA,oBAAA;CACA,yBAAA,EAAA,sCAAA;CACA,kBAAA;AACA;AAEA;CACA,aAAA;CACA,sBAAA;CACA,yBAAA,EAAA,kBAAA;CACA,kBAAA;CACA,iBAAA,EAAA,0BAAA;AACA;AAEA;CACA,cAAA;CACA,gBAAA,EAAA,0BAAA;AACA;AAEA;CACA,iBAAA,EAAA,+BAAA;CACA,cAAA;CACA,gBAAA;CACA,mBAAA;CACA,gCAAA,EAAA,0BAAA;CACA,mBAAA;CACA,gBAAA;AACA;AAEA;CACA,eAAA,EAAA,oCAAA;CACA,gBAAA,EAAA,0BAAA;CACA,cAAA,EAAA,gCAAA;AACA;AAEA;;;CAGA,aAAA;CACA,eAAA;CACA,QAAA,EAAA,gBAAA;CACA,eAAA;CACA,gBAAA;AACA;AAEA;;;CAGA,yBAAA,EAAA,sCAAA;CACA,cAAA;CACA,iBAAA,EAAA,qBAAA;CACA,kBAAA,EAAA,iBAAA;CACA,iBAAA;AACA;AAEA;CACA,gBAAA;CACA,iBAAA;CACA,6BAAA,EAAA,sBAAA;AACA;AAEA;CACA,uCAAA;CACA,mBAAA;AACA;AAEA;CACA,mBAAA;CACA,kBAAA;CACA,iBAAA,EAAA,qBAAA;AACA;AAEA;CACA,cAAA,EAAA,4BAAA;CACA,qBAAA;CACA,qBAAA;AACA;AAEA;CACA,0BAAA;AACA;AAEA;CACA,cAAA;CACA,mBAAA;CACA,yBAAA,EAAA,kBAAA;CACA,YAAA;CACA,YAAA;CACA,kBAAA,EAAA,qBAAA;CACA,kBAAA;CACA,eAAA;CACA,cAAA;CACA,sCAAA;AACA;AAEA;CACA,yBAAA,EAAA,yBAAA;AACA;AAEA;CACA,kBAAA;CACA,gBAAA,EAAA,kCAAA;CACA,aAAA;CACA,cAAA;AACA;;AAEA,kCAAA;AACA;AACA;EACA,YAAA;EACA,aAAA;AACA;AAEA;EACA,iBAAA;AACA;AAEA;EACA,cAAA;AACA;AAEA;EACA,0BAAA,EAAA,qBAAA;AACA;AAEA;EACA,iBAAA;AACA;AACA;AAEA;AACA;EACA,iBAAA;AACA;AAEA;EACA,gBAAA;AACA;AAEA;EACA,iBAAA;EACA,gBAAA;AACA;AAEA;EACA,kBAAA;AACA;AAEA;EACA,kBAAA;AACA;AACA","sourcesContent":["<template>\r\n\t<div class=\"movie-detail-page\">\r\n\t\t<div v-if=\"movie.id\" class=\"movie-content\">\r\n\t\t\t<h1>{{ movie.title }}</h1>\r\n\t\t\t<p class=\"tagline\">{{ movie.tagline }}</p>\r\n\r\n\t\t\t<div class=\"movie-meta\">\r\n\t\t\t\t<div class=\"meta-item\">\r\n\t\t\t\t\t<strong>Release Date:</strong> {{ formatDate(movie.release_date) }}\r\n\t\t\t\t</div>\r\n\t\t\t\t<div class=\"meta-item\">\r\n\t\t\t\t\t<strong>Runtime:</strong> {{ movie.runtime }} minutes\r\n\t\t\t\t</div>\r\n\t\t\t\t<div class=\"meta-item\">\r\n\t\t\t\t\t<strong>Rating:</strong> {{ movie.vote_average }}/10\r\n\t\t\t\t</div>\r\n\t\t\t\t<div class=\"meta-item\">\r\n\t\t\t\t\t<strong>Vote Count:</strong> {{ movie.vote_count }}\r\n\t\t\t\t</div>\r\n\t\t\t\t<div class=\"meta-item\"><strong>Status:</strong> {{ movie.status }}</div>\r\n\t\t\t</div>\r\n\r\n\t\t\t<div class=\"movie-main-details\">\r\n\t\t\t\t<div class=\"movie-overview\">\r\n\t\t\t\t\t<h3>Overview</h3>\r\n\t\t\t\t\t<p>{{ movie.overview }}</p>\r\n\t\t\t\t</div>\r\n\r\n\t\t\t\t<div class=\"genres\" v-if=\"movie.genres && movie.genres.length\">\r\n\t\t\t\t\t<h3>Genres</h3>\r\n\t\t\t\t\t<ul>\r\n\t\t\t\t\t\t<li v-for=\"genre in movie.genres\" :key=\"genre.id\">\r\n\t\t\t\t\t\t\t{{ genre.name }}\r\n\t\t\t\t\t\t</li>\r\n\t\t\t\t\t</ul>\r\n\t\t\t\t</div>\r\n\r\n\t\t\t\t<div\r\n\t\t\t\t\tclass=\"production\"\r\n\t\t\t\t\tv-if=\"movie.production_companies && movie.production_companies.length\"\r\n\t\t\t\t>\r\n\t\t\t\t\t<h3>Production Companies</h3>\r\n\t\t\t\t\t<ul>\r\n\t\t\t\t\t\t<li v-for=\"company in movie.production_companies\" :key=\"company.id\">\r\n\t\t\t\t\t\t\t{{ company.name }}\r\n\t\t\t\t\t\t</li>\r\n\t\t\t\t\t</ul>\r\n\t\t\t\t</div>\r\n\r\n\t\t\t\t<div\r\n\t\t\t\t\tclass=\"languages\"\r\n\t\t\t\t\tv-if=\"movie.spoken_languages && movie.spoken_languages.length\"\r\n\t\t\t\t>\r\n\t\t\t\t\t<h3>Spoken Languages</h3>\r\n\t\t\t\t\t<ul>\r\n\t\t\t\t\t\t<li v-for=\"lang in movie.spoken_languages\" :key=\"lang.iso_639_1\">\r\n\t\t\t\t\t\t\t{{ lang.name }}\r\n\t\t\t\t\t\t</li>\r\n\t\t\t\t\t</ul>\r\n\t\t\t\t</div>\r\n\r\n\t\t\t\t<div class=\"additional-info\">\r\n\t\t\t\t\t<div v-if=\"movie.homepage\" class=\"info-block\">\r\n\t\t\t\t\t\t<h3>Homepage</h3>\r\n\t\t\t\t\t\t<a\r\n\t\t\t\t\t\t\t:href=\"movie.homepage\"\r\n\t\t\t\t\t\t\ttarget=\"_blank\"\r\n\t\t\t\t\t\t\trel=\"noopener noreferrer\"\r\n\t\t\t\t\t\t\t>{{ movie.homepage }}</a\r\n\t\t\t\t\t\t>\r\n\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t<div v-if=\"movie.imdb_id\" class=\"info-block\">\r\n\t\t\t\t\t\t<h3>IMDB ID</h3>\r\n\t\t\t\t\t\t<p>{{ movie.imdb_id }}</p>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\r\n\t\t\t<button @click=\"goBack\" class=\"back-button\">Back to Movies</button>\r\n\t\t</div>\r\n\t\t<div v-else class=\"loading\">Loading movie details...</div>\r\n\t</div>\r\n</template>\r\n\r\n<script lang=\"ts\">\r\nimport Vue from \"vue\";\r\nimport { Component } from \"vue-property-decorator\";\r\nimport { Movie } from \"./types\";\r\n\r\n@Component\r\nexport default class MovieDetail extends Vue {\r\n\tmovie: Movie = {} as Movie;\r\n\r\n\tcreated(): void {\r\n\t\tconst movieId = this.$route.params.id;\r\n\t\tfetch(`/api/movies/${movieId}`)\r\n\t\t\t.then((response) => response.json())\r\n\t\t\t.then((data) => {\r\n\t\t\t\tthis.movie = data;\r\n\t\t\t});\r\n\t}\r\n\r\n\tformatDate(dateString: string): string {\r\n\t\tif (!dateString) return \"N/A\";\r\n\r\n\t\t// Handle dates in format DD/M/YY (like \"19/7/95\")\r\n\t\tif (dateString.includes(\"/\")) {\r\n\t\t\tconst parts = dateString.split(\"/\");\r\n\t\t\tif (parts.length === 3) {\r\n\t\t\t\tconst day = parseInt(parts[0], 10);\r\n\t\t\t\tconst month = parseInt(parts[1], 10) - 1; // Months are 0-indexed in JS\r\n\t\t\t\tlet year = parseInt(parts[2], 10);\r\n\r\n\t\t\t\t// Handle 2-digit years - if year is less than 100, assume it's 19XX for years >= 30, 20XX for years < 30\r\n\t\t\t\tif (year < 100) {\r\n\t\t\t\t\tyear = year >= 30 ? 1900 + year : 2000 + year;\r\n\t\t\t\t}\r\n\r\n\t\t\t\tconst date = new Date(year, month, day);\r\n\r\n\t\t\t\t// Check if date is valid before formatting\r\n\t\t\t\tif (!isNaN(date.getTime())) {\r\n\t\t\t\t\treturn date.toLocaleDateString(undefined, {\r\n\t\t\t\t\t\tyear: \"numeric\",\r\n\t\t\t\t\t\tmonth: \"long\",\r\n\t\t\t\t\t\tday: \"numeric\",\r\n\t\t\t\t\t});\r\n\t\t\t\t}\r\n\t\t\t}\r\n\t\t\treturn dateString; // Return original if parsing failed\r\n\t\t}\r\n\r\n\t\t// For standard ISO date format\r\n\t\tconst date = new Date(dateString);\r\n\t\tif (!isNaN(date.getTime())) {\r\n\t\t\treturn date.toLocaleDateString(undefined, {\r\n\t\t\t\tyear: \"numeric\",\r\n\t\t\t\tmonth: \"long\",\r\n\t\t\t\tday: \"numeric\",\r\n\t\t\t});\r\n\t\t}\r\n\r\n\t\treturn dateString; // Return original string if all parsing attempts fail\r\n\t}\r\n\r\n\tformatCurrency(value: number | string): string {\r\n\t\tif (!value) return \"N/A\";\r\n\t\treturn value.toString().replace(/\\B(?=(\\d{3})+(?!\\d))/g, \",\");\r\n\t}\r\n\r\n\tgoBack(): void {\r\n\t\tthis.$router.push(\"/\");\r\n\t}\r\n}\r\n</script>\r\n\r\n<style>\r\n/* General body styles for consistent background and font */\r\nbody {\r\n\tbackground-color: #f8f9fa; /* Light, neutral background */\r\n\tfont-family: \"Inter\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto,\r\n\t\tOxygen, Ubuntu, Cantarell, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\",\r\n\t\tsans-serif; /* Modern, minimalist font stack */\r\n\tcolor: #343a40; /* Darker grey for text */\r\n}\r\n\r\n.movie-detail-page {\r\n\tmax-width: 800px; /* Slightly reduced max-width for a more focused view */\r\n\tmargin: 30px auto; /* Adjusted margin */\r\n\tpadding: 25px; /* Adjusted padding */\r\n\tbackground-color: #ffffff;\r\n\tborder-radius: 8px; /* Subtle rounding */\r\n\tbox-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* Softer shadow */\r\n}\r\n\r\n.movie-content h1 {\r\n\tfont-size: 2.2rem; /* Slightly reduced title size */\r\n\tmargin-bottom: 10px;\r\n\tcolor: #212529; /* Very dark grey */\r\n\tfont-weight: 500; /* Lighter font weight */\r\n\ttext-align: center;\r\n}\r\n\r\n.tagline {\r\n\tfont-size: 1.1em;\r\n\tfont-style: normal; /* Removed italic for a cleaner look */\r\n\tcolor: #6c757d; /* Muted grey */\r\n\tmargin-bottom: 25px;\r\n\ttext-align: center;\r\n\tpadding-bottom: 15px;\r\n\tborder-bottom: 1px solid #e9ecef; /* Lighter border */\r\n}\r\n\r\n.movie-meta {\r\n\tdisplay: grid;\r\n\tgrid-template-columns: repeat(auto-fit, minmax(200px, 1fr));\r\n\tgap: 15px; /* Reduced gap */\r\n\tmargin-bottom: 25px;\r\n\tpadding: 15px; /* Reduced padding */\r\n\tbackground-color: #f8f9fa; /* Light background for meta section */\r\n\tborder-radius: 6px;\r\n}\r\n\r\n.meta-item {\r\n\tpadding: 10px;\r\n\tbackground-color: #fff;\r\n\tborder: 1px solid #e9ecef; /* Subtle border */\r\n\tborder-radius: 4px;\r\n\tfont-size: 0.9rem; /* Slightly smaller font */\r\n}\r\n\r\n.meta-item strong {\r\n\tcolor: #343a40;\r\n\tfont-weight: 500; /* Lighter strong weight */\r\n}\r\n\r\n.movie-main-details h3 {\r\n\tfont-size: 1.2rem; /* Reduced section title size */\r\n\tcolor: #343a40;\r\n\tmargin-top: 25px;\r\n\tmargin-bottom: 12px;\r\n\tborder-bottom: 1px solid #dee2e6; /* Lighter accent border */\r\n\tpadding-bottom: 6px;\r\n\tfont-weight: 500;\r\n}\r\n\r\n.movie-overview p {\r\n\tfont-size: 1rem; /* Standardized overview text size */\r\n\tline-height: 1.6; /* Improved line spacing */\r\n\tcolor: #495057; /* Slightly lighter text color */\r\n}\r\n\r\n.genres ul,\r\n.production ul,\r\n.languages ul {\r\n\tdisplay: flex;\r\n\tflex-wrap: wrap;\r\n\tgap: 8px; /* Reduced gap */\r\n\tpadding-left: 0;\r\n\tlist-style: none;\r\n}\r\n\r\n.genres li,\r\n.production li,\r\n.languages li {\r\n\tbackground-color: #e9ecef; /* Lighter background for list items */\r\n\tcolor: #343a40;\r\n\tpadding: 6px 12px; /* Adjusted padding */\r\n\tborder-radius: 4px; /* Less rounded */\r\n\tfont-size: 0.85em;\r\n}\r\n\r\n.additional-info {\r\n\tmargin-top: 25px;\r\n\tpadding-top: 15px;\r\n\tborder-top: 1px solid #e9ecef; /* Lighter separator */\r\n}\r\n\r\n.info-block {\r\n\t/* Added class for consistent spacing */\r\n\tmargin-bottom: 12px;\r\n}\r\n\r\n.additional-info h3 {\r\n\tborder-bottom: none;\r\n\tmargin-bottom: 6px;\r\n\tfont-size: 1.1rem; /* Slightly smaller */\r\n}\r\n\r\n.additional-info a {\r\n\tcolor: #007bff; /* Standard blue for links */\r\n\tword-break: break-all;\r\n\ttext-decoration: none;\r\n}\r\n\r\n.additional-info a:hover {\r\n\ttext-decoration: underline;\r\n}\r\n\r\n.back-button {\r\n\tdisplay: block;\r\n\tmargin: 30px auto 0;\r\n\tbackground-color: #007bff; /* Standard blue */\r\n\tcolor: white;\r\n\tborder: none;\r\n\tpadding: 10px 20px; /* Adjusted padding */\r\n\tborder-radius: 4px;\r\n\tcursor: pointer;\r\n\tfont-size: 1em;\r\n\ttransition: background-color 0.2s ease;\r\n}\r\n\r\n.back-button:hover {\r\n\tbackground-color: #0056b3; /* Darker blue on hover */\r\n}\r\n\r\n.loading {\r\n\ttext-align: center;\r\n\tfont-size: 1.1em; /* Slightly smaller loading text */\r\n\tpadding: 40px;\r\n\tcolor: #6c757d;\r\n}\r\n\r\n/* Responsive design adjustments */\r\n@media (max-width: 768px) {\r\n\t.movie-detail-page {\r\n\t\tmargin: 15px;\r\n\t\tpadding: 15px;\r\n\t}\r\n\r\n\t.movie-content h1 {\r\n\t\tfont-size: 1.8rem;\r\n\t}\r\n\r\n\t.tagline {\r\n\t\tfont-size: 1em;\r\n\t}\r\n\r\n\t.movie-meta {\r\n\t\tgrid-template-columns: 1fr; /* Stack meta items */\r\n\t}\r\n\r\n\t.movie-main-details h3 {\r\n\t\tfont-size: 1.1rem;\r\n\t}\r\n}\r\n\r\n@media (max-width: 480px) {\r\n\t.movie-content h1 {\r\n\t\tfont-size: 1.6rem;\r\n\t}\r\n\r\n\t.tagline {\r\n\t\tfont-size: 0.9em;\r\n\t}\r\n\r\n\t.back-button {\r\n\t\tpadding: 8px 15px;\r\n\t\tfont-size: 0.9em;\r\n\t}\r\n\r\n\t.meta-item {\r\n\t\tfont-size: 0.85rem;\r\n\t}\r\n\r\n\t.movie-overview p {\r\n\t\tfont-size: 0.95rem;\r\n\t}\r\n}\r\n</style>\r\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -167,66 +372,116 @@ __webpack_require__.r(__webpack_exports__);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
 ___CSS_LOADER_EXPORT___.push([module.id, `
+body {
+	/* Apply a subtle background to the whole page */
+	background-color: #f8f9fa; /* Lighter, more neutral background */
+	font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+		Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue",
+		sans-serif; /* Modern, minimalist font stack */
+	color: #343a40; /* Darker grey for text for better readability */
+}
 h1 {
 	text-align: center;
-	margin-bottom: 30px;
+	margin-top: 40px; /* Add top margin */
+	margin-bottom: 50px; /* Increased margin */
+	color: #212529; /* Very dark grey, almost black */
+	font-weight: 500; /* Lighter font weight for a cleaner look */
+	font-size: 2.2rem; /* Slightly reduced font size */
 }
 .movie-list {
 	display: grid;
-	/* Responsive grid layout - 4 columns on desktop, fewer on smaller screens */
-	grid-template-columns: repeat(4, 1fr);
-	gap: 20px;
-	padding: 0 20px;
+	grid-template-columns: repeat(
+		auto-fill,
+		minmax(280px, 1fr)
+	); /* Slightly larger min-width for items */
+	gap: 30px; /* Increased gap */
+	padding: 0 30px; /* Increased padding */
+	max-width: 1400px; /* Max width for the list */
+	margin: 0 auto; /* Center the list */
 }
 .movie-item {
-	border: 1px solid #ddd;
-	border-radius: 8px;
-	padding: 15px;
+	background-color: #fff;
+	border: 1px solid #e9ecef; /* Subtle border */
+	border-radius: 8px; /* Slightly less rounded corners */
+	padding: 25px; /* Increased padding */
 	cursor: pointer;
-	transition: transform 0.2s, box-shadow 0.2s;
-	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03); /* Very subtle shadow */
 	height: 100%;
 	display: flex;
 	flex-direction: column;
 }
 .movie-item:hover {
-	transform: translateY(-5px);
-	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+	transform: translateY(-5px); /* Subtle hover effect */
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06); /* Slightly more pronounced shadow on hover */
+}
+.movie-item h2 {
+	font-size: 1.15rem; /* Slightly smaller title */
+	color: #343a40;
+	margin-bottom: 10px; /* Increased margin */
+	font-weight: 500; /* Lighter title */
 }
 .tagline {
-	color: #666;
-	font-style: italic;
+	color: #6c757d; /* Muted grey for tagline */
+	font-style: normal; /* Remove italic */
 	flex-grow: 1;
+	font-size: 0.85rem;
+	margin-bottom: 15px; /* Increased space below tagline */
+	line-height: 1.5; /* Improved line height */
 }
 .rating {
-	color: #e67e22;
-	font-weight: bold;
+	color: #495057; /* Muted color for rating */
+	font-weight: 500; /* Lighter font weight */
 	margin-top: auto;
+	font-size: 0.9rem;
+}
+.rating strong {
+	font-weight: 500; /* Match font weight */
 }
 
 /* Media queries for responsive design */
 @media screen and (max-width: 1200px) {
 .movie-list {
-		grid-template-columns: repeat(
-			3,
-			1fr
-		); /* 3 columns on medium-large screens */
+		grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+		gap: 25px;
+		padding: 0 25px;
 }
 }
 @media screen and (max-width: 900px) {
 .movie-list {
-		grid-template-columns: repeat(2, 1fr); /* 2 columns on medium screens */
+		grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+		gap: 20px;
+		padding: 0 20px;
+}
+h1 {
+		font-size: 2rem;
+		margin-bottom: 40px;
 }
 }
 @media screen and (max-width: 600px) {
 .movie-list {
 		grid-template-columns: 1fr; /* 1 column on mobile */
+		gap: 20px;
+		padding: 0 15px;
 }
 h1 {
 		font-size: 1.8rem;
+		margin-bottom: 30px;
+}
+.movie-item {
+		padding: 20px;
+}
+.movie-item h2 {
+		font-size: 1.1rem;
+}
+.tagline {
+		font-size: 0.8rem;
+}
+.rating {
+		font-size: 0.85rem;
 }
 }
-`, "",{"version":3,"sources":["webpack://./src/MovieList.vue","webpack://./MovieList.vue"],"names":[],"mappings":";AA4CA;CACA,kBAAA;CACA,mBAAA;AACA;AACA;CACA,aAAA;CACA,4EAAA;CACA,qCAAA;CACA,SAAA;CACA,eAAA;AACA;AACA;CACA,sBAAA;CACA,kBAAA;CACA,aAAA;CACA,eAAA;CACA,2CAAA;CACA,wCAAA;CACA,YAAA;CACA,aAAA;CACA,sBAAA;AACA;AACA;CACA,2BAAA;CACA,yCAAA;AACA;AACA;CACA,WAAA;CACA,kBAAA;CACA,YAAA;AACA;AACA;CACA,cAAA;CACA,iBAAA;CACA,gBAAA;AACA;;AAEA,wCAAA;AACA;AACA;EACA;;;GAAA,EAAA,sCAAA;AACA;AACA;AAEA;AACA;ECCE,qCAAqC,EAAE,gCAAgC;ADCzE;AACA;AAEA;AACA;ECCE,0BAA0B,EAAE,uBAAuB;ADCrD;AACA;EACA,iBAAA;AACA;AACA","sourcesContent":["<template>\r\n\t<div>\r\n\t\t<h1>Movies</h1>\r\n\t\t<div class=\"movie-list\">\r\n\t\t\t<div\r\n\t\t\t\tv-for=\"movie in movies\"\r\n\t\t\t\t:key=\"movie.id\"\r\n\t\t\t\tclass=\"movie-item\"\r\n\t\t\t\t@click=\"viewMovie(movie.id)\"\r\n\t\t\t>\r\n\t\t\t\t<h2>{{ movie.title }}</h2>\r\n\t\t\t\t<p class=\"tagline\">{{ movie.tagline }}</p>\r\n\t\t\t\t<p class=\"rating\">\r\n\t\t\t\t\t<strong>Rating:</strong> {{ movie.vote_average }}/10\r\n\t\t\t\t</p>\r\n\t\t\t</div>\r\n\t\t</div>\r\n\t</div>\r\n</template>\r\n\r\n<script lang=\"ts\">\r\nimport Vue from \"vue\";\r\nimport { Component } from \"vue-property-decorator\";\r\nimport { MovieListItem } from \"./types\";\r\n\r\n@Component\r\nexport default class MovieList extends Vue {\r\n\tmovies: MovieListItem[] = [];\r\n\r\n\tcreated(): void {\r\n\t\tfetch(\"/api/movies\")\r\n\t\t\t.then((response) => response.json())\r\n\t\t\t.then((data) => {\r\n\t\t\t\tthis.movies = data as MovieListItem[];\r\n\t\t\t});\r\n\t}\r\n\r\n\tviewMovie(id: number): void {\r\n\t\tthis.$router.push(\"/movie/\" + id);\r\n\t}\r\n}\r\n</script>\r\n\r\n<style>\r\nh1 {\r\n\ttext-align: center;\r\n\tmargin-bottom: 30px;\r\n}\r\n.movie-list {\r\n\tdisplay: grid;\r\n\t/* Responsive grid layout - 4 columns on desktop, fewer on smaller screens */\r\n\tgrid-template-columns: repeat(4, 1fr);\r\n\tgap: 20px;\r\n\tpadding: 0 20px;\r\n}\r\n.movie-item {\r\n\tborder: 1px solid #ddd;\r\n\tborder-radius: 8px;\r\n\tpadding: 15px;\r\n\tcursor: pointer;\r\n\ttransition: transform 0.2s, box-shadow 0.2s;\r\n\tbox-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);\r\n\theight: 100%;\r\n\tdisplay: flex;\r\n\tflex-direction: column;\r\n}\r\n.movie-item:hover {\r\n\ttransform: translateY(-5px);\r\n\tbox-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);\r\n}\r\n.tagline {\r\n\tcolor: #666;\r\n\tfont-style: italic;\r\n\tflex-grow: 1;\r\n}\r\n.rating {\r\n\tcolor: #e67e22;\r\n\tfont-weight: bold;\r\n\tmargin-top: auto;\r\n}\r\n\r\n/* Media queries for responsive design */\r\n@media screen and (max-width: 1200px) {\r\n\t.movie-list {\r\n\t\tgrid-template-columns: repeat(\r\n\t\t\t3,\r\n\t\t\t1fr\r\n\t\t); /* 3 columns on medium-large screens */\r\n\t}\r\n}\r\n\r\n@media screen and (max-width: 900px) {\r\n\t.movie-list {\r\n\t\tgrid-template-columns: repeat(2, 1fr); /* 2 columns on medium screens */\r\n\t}\r\n}\r\n\r\n@media screen and (max-width: 600px) {\r\n\t.movie-list {\r\n\t\tgrid-template-columns: 1fr; /* 1 column on mobile */\r\n\t}\r\n\th1 {\r\n\t\tfont-size: 1.8rem;\r\n\t}\r\n}\r\n</style>\r\n","\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\r\nh1 {\r\n\ttext-align: center;\r\n\tmargin-bottom: 30px;\r\n}\r\n.movie-list {\r\n\tdisplay: grid;\r\n\t/* Responsive grid layout - 4 columns on desktop, fewer on smaller screens */\r\n\tgrid-template-columns: repeat(4, 1fr);\r\n\tgap: 20px;\r\n\tpadding: 0 20px;\r\n}\r\n.movie-item {\r\n\tborder: 1px solid #ddd;\r\n\tborder-radius: 8px;\r\n\tpadding: 15px;\r\n\tcursor: pointer;\r\n\ttransition: transform 0.2s, box-shadow 0.2s;\r\n\tbox-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);\r\n\theight: 100%;\r\n\tdisplay: flex;\r\n\tflex-direction: column;\r\n}\r\n.movie-item:hover {\r\n\ttransform: translateY(-5px);\r\n\tbox-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);\r\n}\r\n.tagline {\r\n\tcolor: #666;\r\n\tfont-style: italic;\r\n\tflex-grow: 1;\r\n}\r\n.rating {\r\n\tcolor: #e67e22;\r\n\tfont-weight: bold;\r\n\tmargin-top: auto;\r\n}\r\n\r\n/* Media queries for responsive design */\r\n@media screen and (max-width: 1200px) {\r\n\t.movie-list {\r\n\t\tgrid-template-columns: repeat(\r\n\t\t\t3,\r\n\t\t\t1fr\r\n\t\t); /* 3 columns on medium-large screens */\r\n\t}\r\n}\r\n\r\n@media screen and (max-width: 900px) {\r\n\t.movie-list {\r\n\t\tgrid-template-columns: repeat(2, 1fr); /* 2 columns on medium screens */\r\n\t}\r\n}\r\n\r\n@media screen and (max-width: 600px) {\r\n\t.movie-list {\r\n\t\tgrid-template-columns: 1fr; /* 1 column on mobile */\r\n\t}\r\n\th1 {\r\n\t\tfont-size: 1.8rem;\r\n\t}\r\n}\r\n"],"sourceRoot":""}]);
+`, "",{"version":3,"sources":["webpack://./src/MovieList.vue"],"names":[],"mappings":";AA4CA;CACA,gDAAA;CACA,yBAAA,EAAA,qCAAA;CACA;;YAEA,EAAA,kCAAA;CACA,cAAA,EAAA,gDAAA;AACA;AAEA;CACA,kBAAA;CACA,gBAAA,EAAA,mBAAA;CACA,mBAAA,EAAA,qBAAA;CACA,cAAA,EAAA,iCAAA;CACA,gBAAA,EAAA,2CAAA;CACA,iBAAA,EAAA,+BAAA;AACA;AACA;CACA,aAAA;CACA;;;EAGA,EAAA,wCAAA;CACA,SAAA,EAAA,kBAAA;CACA,eAAA,EAAA,sBAAA;CACA,iBAAA,EAAA,2BAAA;CACA,cAAA,EAAA,oBAAA;AACA;AACA;CACA,sBAAA;CACA,yBAAA,EAAA,kBAAA;CACA,kBAAA,EAAA,kCAAA;CACA,aAAA,EAAA,sBAAA;CACA,eAAA;CACA,6DAAA;CACA,yCAAA,EAAA,uBAAA;CACA,YAAA;CACA,aAAA;CACA,sBAAA;AACA;AACA;CACA,2BAAA,EAAA,wBAAA;CACA,0CAAA,EAAA,6CAAA;AACA;AAEA;CACA,kBAAA,EAAA,2BAAA;CACA,cAAA;CACA,mBAAA,EAAA,qBAAA;CACA,gBAAA,EAAA,kBAAA;AACA;AAEA;CACA,cAAA,EAAA,2BAAA;CACA,kBAAA,EAAA,kBAAA;CACA,YAAA;CACA,kBAAA;CACA,mBAAA,EAAA,kCAAA;CACA,gBAAA,EAAA,yBAAA;AACA;AACA;CACA,cAAA,EAAA,2BAAA;CACA,gBAAA,EAAA,wBAAA;CACA,gBAAA;CACA,iBAAA;AACA;AAEA;CACA,gBAAA,EAAA,sBAAA;AACA;;AAEA,wCAAA;AACA;AACA;EACA,4DAAA;EACA,SAAA;EACA,eAAA;AACA;AACA;AAEA;AACA;EACA,4DAAA;EACA,SAAA;EACA,eAAA;AACA;AACA;EACA,eAAA;EACA,mBAAA;AACA;AACA;AAEA;AACA;EACA,0BAAA,EAAA,uBAAA;EACA,SAAA;EACA,eAAA;AACA;AACA;EACA,iBAAA;EACA,mBAAA;AACA;AACA;EACA,aAAA;AACA;AACA;EACA,iBAAA;AACA;AACA;EACA,iBAAA;AACA;AACA;EACA,kBAAA;AACA;AACA","sourcesContent":["<template>\r\n\t<div>\r\n\t\t<h1>Movies</h1>\r\n\t\t<div class=\"movie-list\">\r\n\t\t\t<div\r\n\t\t\t\tv-for=\"movie in movies\"\r\n\t\t\t\t:key=\"movie.id\"\r\n\t\t\t\tclass=\"movie-item\"\r\n\t\t\t\t@click=\"viewMovie(movie.id)\"\r\n\t\t\t>\r\n\t\t\t\t<h2>{{ movie.title }}</h2>\r\n\t\t\t\t<p class=\"tagline\">{{ movie.tagline }}</p>\r\n\t\t\t\t<p class=\"rating\">\r\n\t\t\t\t\t<strong>Rating:</strong> {{ movie.vote_average }}/10\r\n\t\t\t\t</p>\r\n\t\t\t</div>\r\n\t\t</div>\r\n\t</div>\r\n</template>\r\n\r\n<script lang=\"ts\">\r\nimport Vue from \"vue\";\r\nimport { Component } from \"vue-property-decorator\";\r\nimport { MovieListItem } from \"./types\";\r\n\r\n@Component\r\nexport default class MovieList extends Vue {\r\n\tmovies: MovieListItem[] = [];\r\n\r\n\tcreated(): void {\r\n\t\tfetch(\"/api/movies\")\r\n\t\t\t.then((response) => response.json())\r\n\t\t\t.then((data) => {\r\n\t\t\t\tthis.movies = data as MovieListItem[];\r\n\t\t\t});\r\n\t}\r\n\r\n\tviewMovie(id: number): void {\r\n\t\tthis.$router.push(\"/movie/\" + id);\r\n\t}\r\n}\r\n</script>\r\n\r\n<style>\r\nbody {\r\n\t/* Apply a subtle background to the whole page */\r\n\tbackground-color: #f8f9fa; /* Lighter, more neutral background */\r\n\tfont-family: \"Inter\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto,\r\n\t\tOxygen, Ubuntu, Cantarell, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\",\r\n\t\tsans-serif; /* Modern, minimalist font stack */\r\n\tcolor: #343a40; /* Darker grey for text for better readability */\r\n}\r\n\r\nh1 {\r\n\ttext-align: center;\r\n\tmargin-top: 40px; /* Add top margin */\r\n\tmargin-bottom: 50px; /* Increased margin */\r\n\tcolor: #212529; /* Very dark grey, almost black */\r\n\tfont-weight: 500; /* Lighter font weight for a cleaner look */\r\n\tfont-size: 2.2rem; /* Slightly reduced font size */\r\n}\r\n.movie-list {\r\n\tdisplay: grid;\r\n\tgrid-template-columns: repeat(\r\n\t\tauto-fill,\r\n\t\tminmax(280px, 1fr)\r\n\t); /* Slightly larger min-width for items */\r\n\tgap: 30px; /* Increased gap */\r\n\tpadding: 0 30px; /* Increased padding */\r\n\tmax-width: 1400px; /* Max width for the list */\r\n\tmargin: 0 auto; /* Center the list */\r\n}\r\n.movie-item {\r\n\tbackground-color: #fff;\r\n\tborder: 1px solid #e9ecef; /* Subtle border */\r\n\tborder-radius: 8px; /* Slightly less rounded corners */\r\n\tpadding: 25px; /* Increased padding */\r\n\tcursor: pointer;\r\n\ttransition: transform 0.2s ease-out, box-shadow 0.2s ease-out;\r\n\tbox-shadow: 0 2px 4px rgba(0, 0, 0, 0.03); /* Very subtle shadow */\r\n\theight: 100%;\r\n\tdisplay: flex;\r\n\tflex-direction: column;\r\n}\r\n.movie-item:hover {\r\n\ttransform: translateY(-5px); /* Subtle hover effect */\r\n\tbox-shadow: 0 5px 15px rgba(0, 0, 0, 0.06); /* Slightly more pronounced shadow on hover */\r\n}\r\n\r\n.movie-item h2 {\r\n\tfont-size: 1.15rem; /* Slightly smaller title */\r\n\tcolor: #343a40;\r\n\tmargin-bottom: 10px; /* Increased margin */\r\n\tfont-weight: 500; /* Lighter title */\r\n}\r\n\r\n.tagline {\r\n\tcolor: #6c757d; /* Muted grey for tagline */\r\n\tfont-style: normal; /* Remove italic */\r\n\tflex-grow: 1;\r\n\tfont-size: 0.85rem;\r\n\tmargin-bottom: 15px; /* Increased space below tagline */\r\n\tline-height: 1.5; /* Improved line height */\r\n}\r\n.rating {\r\n\tcolor: #495057; /* Muted color for rating */\r\n\tfont-weight: 500; /* Lighter font weight */\r\n\tmargin-top: auto;\r\n\tfont-size: 0.9rem;\r\n}\r\n\r\n.rating strong {\r\n\tfont-weight: 500; /* Match font weight */\r\n}\r\n\r\n/* Media queries for responsive design */\r\n@media screen and (max-width: 1200px) {\r\n\t.movie-list {\r\n\t\tgrid-template-columns: repeat(auto-fill, minmax(260px, 1fr));\r\n\t\tgap: 25px;\r\n\t\tpadding: 0 25px;\r\n\t}\r\n}\r\n\r\n@media screen and (max-width: 900px) {\r\n\t.movie-list {\r\n\t\tgrid-template-columns: repeat(auto-fill, minmax(240px, 1fr));\r\n\t\tgap: 20px;\r\n\t\tpadding: 0 20px;\r\n\t}\r\n\th1 {\r\n\t\tfont-size: 2rem;\r\n\t\tmargin-bottom: 40px;\r\n\t}\r\n}\r\n\r\n@media screen and (max-width: 600px) {\r\n\t.movie-list {\r\n\t\tgrid-template-columns: 1fr; /* 1 column on mobile */\r\n\t\tgap: 20px;\r\n\t\tpadding: 0 15px;\r\n\t}\r\n\th1 {\r\n\t\tfont-size: 1.8rem;\r\n\t\tmargin-bottom: 30px;\r\n\t}\r\n\t.movie-item {\r\n\t\tpadding: 20px;\r\n\t}\r\n\t.movie-item h2 {\r\n\t\tfont-size: 1.1rem;\r\n\t}\r\n\t.tagline {\r\n\t\tfont-size: 0.8rem;\r\n\t}\r\n\t.rating {\r\n\t\tfont-size: 0.85rem;\r\n\t}\r\n}\r\n</style>\r\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -1150,7 +1405,7 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "movie-detail" }, [
+  return _c("div", { staticClass: "movie-detail-page" }, [
     _vm.movie.id
       ? _c("div", { staticClass: "movie-content" }, [
           _c("h1", [_vm._v(_vm._s(_vm.movie.title))]),
@@ -1190,7 +1445,7 @@ var render = function () {
             ]),
           ]),
           _vm._v(" "),
-          _c("div", { staticClass: "movie-details" }, [
+          _c("div", { staticClass: "movie-main-details" }, [
             _c("div", { staticClass: "movie-overview" }, [
               _c("h3", [_vm._v("Overview")]),
               _vm._v(" "),
@@ -1256,7 +1511,7 @@ var render = function () {
             _vm._v(" "),
             _c("div", { staticClass: "additional-info" }, [
               _vm.movie.homepage
-                ? _c("div", [
+                ? _c("div", { staticClass: "info-block" }, [
                     _c("h3", [_vm._v("Homepage")]),
                     _vm._v(" "),
                     _c(
@@ -1274,7 +1529,7 @@ var render = function () {
                 : _vm._e(),
               _vm._v(" "),
               _vm.movie.imdb_id
-                ? _c("div", [
+                ? _c("div", { staticClass: "info-block" }, [
                     _c("h3", [_vm._v("IMDB ID")]),
                     _vm._v(" "),
                     _c("p", [_vm._v(_vm._s(_vm.movie.imdb_id))]),
