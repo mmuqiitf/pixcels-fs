@@ -51,8 +51,10 @@ h1 {
 }
 .movie-list {
 	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+	/* Responsive grid layout - 4 columns on desktop, fewer on smaller screens */
+	grid-template-columns: repeat(4, 1fr);
 	gap: 20px;
+	padding: 0 20px;
 }
 .movie-item {
 	border: 1px solid #ddd;
@@ -61,6 +63,9 @@ h1 {
 	cursor: pointer;
 	transition: transform 0.2s, box-shadow 0.2s;
 	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	height: 100%;
+	display: flex;
+	flex-direction: column;
 }
 .movie-item:hover {
 	transform: translateY(-5px);
@@ -69,8 +74,36 @@ h1 {
 .tagline {
 	color: #666;
 	font-style: italic;
+	flex-grow: 1;
 }
 .rating {
 	color: #e67e22;
+	font-weight: bold;
+	margin-top: auto;
+}
+
+/* Media queries for responsive design */
+@media screen and (max-width: 1200px) {
+	.movie-list {
+		grid-template-columns: repeat(
+			3,
+			1fr
+		); /* 3 columns on medium-large screens */
+	}
+}
+
+@media screen and (max-width: 900px) {
+	.movie-list {
+		grid-template-columns: repeat(2, 1fr); /* 2 columns on medium screens */
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.movie-list {
+		grid-template-columns: 1fr; /* 1 column on mobile */
+	}
+	h1 {
+		font-size: 1.8rem;
+	}
 }
 </style>

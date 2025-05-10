@@ -12172,7 +12172,7 @@ function patchScopedSlots (instance) {
 }
 
 },{}],9:[function(require,module,exports){
-var __vueify_style_dispose__ = require("vueify/lib/insert-css").insert(".movie-detail {\r\n\tmax-width: 800px;\r\n\tmargin: 0 auto;\r\n\tpadding: 20px;\r\n}\r\n\r\n.movie-content {\r\n\tbackground-color: #f9f9f9;\r\n\tborder-radius: 8px;\r\n\tpadding: 25px;\r\n\tbox-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);\r\n}\r\n\r\nh1 {\r\n\tmargin-bottom: 10px;\r\n\tcolor: #333;\r\n}\r\n\r\n.tagline {\r\n\tfont-size: 1.2em;\r\n\tfont-style: italic;\r\n\tcolor: #666;\r\n\tmargin-bottom: 20px;\r\n\tborder-bottom: 1px solid #ddd;\r\n\tpadding-bottom: 15px;\r\n}\r\n\r\n.movie-meta {\r\n\tdisplay: grid;\r\n\tgrid-template-columns: repeat(auto-fit, minmax(200px, 1fr));\r\n\tgap: 15px;\r\n\tmargin-bottom: 20px;\r\n}\r\n\r\n.movie-overview {\r\n\tmargin: 25px 0;\r\n}\r\n\r\n.back-button {\r\n\tbackground-color: #3498db;\r\n\tcolor: white;\r\n\tborder: none;\r\n\tpadding: 10px 20px;\r\n\tborder-radius: 4px;\r\n\tcursor: pointer;\r\n\tfont-size: 1em;\r\n\ttransition: background-color 0.3s;\r\n}\r\n\r\n.back-button:hover {\r\n\tbackground-color: #2980b9;\r\n}\r\n\r\n.loading {\r\n\ttext-align: center;\r\n\tfont-size: 1.2em;\r\n\tpadding: 40px;\r\n\tcolor: #666;\r\n}\r\n\r\n@media (max-width: 600px) {\r\n\t.movie-meta {\r\n\t\tgrid-template-columns: 1fr;\r\n\t}\r\n}")
+var __vueify_style_dispose__ = require("vueify/lib/insert-css").insert(".movie-detail {\r\n\tmax-width: 800px;\r\n\tmargin: 0 auto;\r\n\tpadding: 20px;\r\n}\r\n\r\n.movie-content {\r\n\tbackground-color: #f9f9f9;\r\n\tborder-radius: 8px;\r\n\tpadding: 25px;\r\n\tbox-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);\r\n}\r\n\r\nh1 {\r\n\tmargin-bottom: 10px;\r\n\tcolor: #333;\r\n}\r\n\r\nh3 {\r\n\tmargin-top: 20px;\r\n\tmargin-bottom: 10px;\r\n\tcolor: #444;\r\n\tborder-bottom: 1px solid #eee;\r\n\tpadding-bottom: 5px;\r\n}\r\n\r\n.tagline {\r\n\tfont-size: 1.2em;\r\n\tfont-style: italic;\r\n\tcolor: #666;\r\n\tmargin-bottom: 20px;\r\n\tborder-bottom: 1px solid #ddd;\r\n\tpadding-bottom: 15px;\r\n}\r\n\r\n.movie-meta {\r\n\tdisplay: grid;\r\n\tgrid-template-columns: repeat(auto-fit, minmax(200px, 1fr));\r\n\tgap: 15px;\r\n\tmargin-bottom: 20px;\r\n\tbackground-color: #f0f0f0;\r\n\tpadding: 15px;\r\n\tborder-radius: 6px;\r\n}\r\n\r\n.meta-item {\r\n\tpadding: 8px;\r\n\tbackground-color: #fff;\r\n\tborder-radius: 4px;\r\n\tbox-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);\r\n}\r\n\r\n.movie-details {\r\n\tmargin: 25px 0;\r\n}\r\n\r\n.movie-overview {\r\n\tmargin-bottom: 20px;\r\n}\r\n\r\n.genres ul,\r\n.production ul,\r\n.languages ul {\r\n\tdisplay: flex;\r\n\tflex-wrap: wrap;\r\n\tgap: 10px;\r\n\tpadding-left: 0;\r\n\tlist-style: none;\r\n}\r\n\r\n.genres li,\r\n.production li,\r\n.languages li {\r\n\tbackground-color: #e0e0e0;\r\n\tpadding: 5px 10px;\r\n\tborder-radius: 15px;\r\n\tfont-size: 0.9em;\r\n}\r\n\r\n.additional-info {\r\n\tmargin-top: 20px;\r\n}\r\n\r\n.additional-info a {\r\n\tcolor: #3498db;\r\n\tword-break: break-all;\r\n}\r\n\r\n.back-button {\r\n\tbackground-color: #3498db;\r\n\tcolor: white;\r\n\tborder: none;\r\n\tpadding: 10px 20px;\r\n\tborder-radius: 4px;\r\n\tcursor: pointer;\r\n\tfont-size: 1em;\r\n\ttransition: background-color 0.3s;\r\n\tmargin-top: 20px;\r\n}\r\n\r\n.back-button:hover {\r\n\tbackground-color: #2980b9;\r\n}\r\n\r\n.loading {\r\n\ttext-align: center;\r\n\tfont-size: 1.2em;\r\n\tpadding: 40px;\r\n\tcolor: #666;\r\n}\r\n\r\n/* Responsive design for smaller screens */\r\n@media (max-width: 600px) {\r\n\t.movie-meta {\r\n\t\tgrid-template-columns: 1fr;\r\n\t}\r\n\r\n\t.movie-content {\r\n\t\tpadding: 15px;\r\n\t}\r\n\r\n\th1 {\r\n\t\tfont-size: 1.8rem;\r\n\t}\r\n\r\n\t.tagline {\r\n\t\tfont-size: 1rem;\r\n\t}\r\n\r\n\t.genres ul,\r\n\t.production ul,\r\n\t.languages ul {\r\n\t\tflex-direction: column;\r\n\t\tgap: 5px;\r\n\t}\r\n}")
 ;(function(){
 "use strict";
 
@@ -12192,8 +12192,46 @@ module.exports = {
 	},
 	methods: {
 		formatDate: function formatDate(dateString) {
-			if (!dateString) return "";
-			return new Date(dateString).toLocaleDateString();
+			if (!dateString) return "N/A";
+
+			if (dateString.includes("/")) {
+				var parts = dateString.split("/");
+				if (parts.length === 3) {
+					var day = parseInt(parts[0], 10);
+					var month = parseInt(parts[1], 10) - 1;
+					var year = parseInt(parts[2], 10);
+
+					if (year < 100) {
+						year = year >= 30 ? 1900 + year : 2000 + year;
+					}
+
+					var _date = new Date(year, month, day);
+
+					if (!isNaN(_date.getTime())) {
+						return _date.toLocaleDateString(undefined, {
+							year: "numeric",
+							month: "long",
+							day: "numeric"
+						});
+					}
+				}
+				return dateString;
+			}
+
+			var date = new Date(dateString);
+			if (!isNaN(date.getTime())) {
+				return date.toLocaleDateString(undefined, {
+					year: "numeric",
+					month: "long",
+					day: "numeric"
+				});
+			}
+
+			return dateString;
+		},
+		formatCurrency: function formatCurrency(value) {
+			if (!value) return "N/A";
+			return value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 		},
 		goBack: function goBack() {
 			this.$router.push("/");
@@ -12204,7 +12242,7 @@ module.exports = {
 if (module.exports.__esModule) module.exports = module.exports.default
 var __vue__options__ = (typeof module.exports === "function"? module.exports.options: module.exports)
 if (__vue__options__.functional) {console.error("[vueify] functional components are not supported and should be defined in plain js files using render functions.")}
-__vue__options__.render = function render () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"movie-detail"},[(_vm.movie.id)?_c('div',{staticClass:"movie-content"},[_c('h1',[_vm._v(_vm._s(_vm.movie.title))]),_vm._v(" "),_c('p',{staticClass:"tagline"},[_vm._v(_vm._s(_vm.movie.tagline))]),_vm._v(" "),_c('div',{staticClass:"movie-meta"},[_c('p',[_c('strong',[_vm._v("Release Date:")]),_vm._v(" "+_vm._s(_vm.formatDate(_vm.movie.release_date))+"\n\t\t\t")]),_vm._v(" "),_c('p',[_c('strong',[_vm._v("Runtime:")]),_vm._v(" "+_vm._s(_vm.movie.runtime)+" minutes")]),_vm._v(" "),_c('p',[_c('strong',[_vm._v("Rating:")]),_vm._v(" "+_vm._s(_vm.movie.vote_average)+"/10")])]),_vm._v(" "),_c('div',{staticClass:"movie-overview"},[_c('h3',[_vm._v("Overview")]),_vm._v(" "),_c('p',[_vm._v(_vm._s(_vm.movie.overview))])]),_vm._v(" "),_c('button',{staticClass:"back-button",on:{"click":_vm.goBack}},[_vm._v("Back to Movies")])]):_c('div',{staticClass:"loading"},[_vm._v("Loading movie details...")])])}
+__vue__options__.render = function render () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"movie-detail"},[(_vm.movie.id)?_c('div',{staticClass:"movie-content"},[_c('h1',[_vm._v(_vm._s(_vm.movie.title))]),_vm._v(" "),_c('p',{staticClass:"tagline"},[_vm._v(_vm._s(_vm.movie.tagline))]),_vm._v(" "),_c('div',{staticClass:"movie-meta"},[_c('div',{staticClass:"meta-item"},[_c('strong',[_vm._v("Release Date:")]),_vm._v(" "+_vm._s(_vm.formatDate(_vm.movie.release_date))+"\n\t\t\t")]),_vm._v(" "),_c('div',{staticClass:"meta-item"},[_c('strong',[_vm._v("Runtime:")]),_vm._v(" "+_vm._s(_vm.movie.runtime)+" minutes\n\t\t\t")]),_vm._v(" "),_c('div',{staticClass:"meta-item"},[_c('strong',[_vm._v("Rating:")]),_vm._v(" "+_vm._s(_vm.movie.vote_average)+"/10\n\t\t\t")]),_vm._v(" "),_c('div',{staticClass:"meta-item"},[_c('strong',[_vm._v("Vote Count:")]),_vm._v(" "+_vm._s(_vm.movie.vote_count)+"\n\t\t\t")]),_vm._v(" "),_c('div',{staticClass:"meta-item"},[_c('strong',[_vm._v("Status:")]),_vm._v(" "+_vm._s(_vm.movie.status))]),_vm._v(" "),_c('div',{staticClass:"meta-item"},[_c('strong',[_vm._v("Popularity:")]),_vm._v(" "+_vm._s(_vm.movie.popularity)+"\n\t\t\t")])]),_vm._v(" "),_c('div',{staticClass:"movie-details"},[_c('div',{staticClass:"movie-overview"},[_c('h3',[_vm._v("Overview")]),_vm._v(" "),_c('p',[_vm._v(_vm._s(_vm.movie.overview))])]),_vm._v(" "),(_vm.movie.genres && _vm.movie.genres.length)?_c('div',{staticClass:"genres"},[_c('h3',[_vm._v("Genres")]),_vm._v(" "),_c('ul',_vm._l((_vm.movie.genres),function(genre){return _c('li',{key:genre.id},[_vm._v("\n\t\t\t\t\t\t"+_vm._s(genre.name)+"\n\t\t\t\t\t")])}),0)]):_vm._e(),_vm._v(" "),(_vm.movie.production_companies && _vm.movie.production_companies.length)?_c('div',{staticClass:"production"},[_c('h3',[_vm._v("Production Companies")]),_vm._v(" "),_c('ul',_vm._l((_vm.movie.production_companies),function(company){return _c('li',{key:company.id},[_vm._v("\n\t\t\t\t\t\t"+_vm._s(company.name)+"\n\t\t\t\t\t")])}),0)]):_vm._e(),_vm._v(" "),(_vm.movie.spoken_languages && _vm.movie.spoken_languages.length)?_c('div',{staticClass:"languages"},[_c('h3',[_vm._v("Spoken Languages")]),_vm._v(" "),_c('ul',_vm._l((_vm.movie.spoken_languages),function(lang){return _c('li',{key:lang.iso_639_1},[_vm._v("\n\t\t\t\t\t\t"+_vm._s(lang.name)+"\n\t\t\t\t\t")])}),0)]):_vm._e(),_vm._v(" "),_c('div',{staticClass:"additional-info"},[(_vm.movie.homepage)?_c('div',[_c('h3',[_vm._v("Homepage")]),_vm._v(" "),_c('a',{attrs:{"href":_vm.movie.homepage,"target":"_blank","rel":"noopener noreferrer"}},[_vm._v(_vm._s(_vm.movie.homepage))])]):_vm._e(),_vm._v(" "),(_vm.movie.imdb_id)?_c('div',[_c('h3',[_vm._v("IMDB ID")]),_vm._v(" "),_c('p',[_vm._v(_vm._s(_vm.movie.imdb_id))])]):_vm._e()])]),_vm._v(" "),_c('button',{staticClass:"back-button",on:{"click":_vm.goBack}},[_vm._v("Back to Movies")])]):_c('div',{staticClass:"loading"},[_vm._v("Loading movie details...")])])}
 __vue__options__.staticRenderFns = []
 if (module.hot) {(function () {  var hotAPI = require("vueify/node_modules/vue-hot-reload-api")
   hotAPI.install(require("vue"), true)
@@ -12218,7 +12256,7 @@ if (module.hot) {(function () {  var hotAPI = require("vueify/node_modules/vue-h
   }
 })()}
 },{"vue":5,"vueify/lib/insert-css":7,"vueify/node_modules/vue-hot-reload-api":8}],10:[function(require,module,exports){
-var __vueify_style_dispose__ = require("vueify/lib/insert-css").insert("h1 {\r\n\ttext-align: center;\r\n\tmargin-bottom: 30px;\r\n}\r\n.movie-list {\r\n\tdisplay: grid;\r\n\tgrid-template-columns: repeat(auto-fill, minmax(280px, 1fr));\r\n\tgap: 20px;\r\n}\r\n.movie-item {\r\n\tborder: 1px solid #ddd;\r\n\tborder-radius: 8px;\r\n\tpadding: 15px;\r\n\tcursor: pointer;\r\n\ttransition: transform 0.2s, box-shadow 0.2s;\r\n\tbox-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);\r\n}\r\n.movie-item:hover {\r\n\ttransform: translateY(-5px);\r\n\tbox-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);\r\n}\r\n.tagline {\r\n\tcolor: #666;\r\n\tfont-style: italic;\r\n}\r\n.rating {\r\n\tcolor: #e67e22;\r\n}")
+var __vueify_style_dispose__ = require("vueify/lib/insert-css").insert("h1 {\r\n\ttext-align: center;\r\n\tmargin-bottom: 30px;\r\n}\r\n.movie-list {\r\n\tdisplay: grid;\r\n\t/* Responsive grid layout - 4 columns on desktop, fewer on smaller screens */\r\n\tgrid-template-columns: repeat(4, 1fr);\r\n\tgap: 20px;\r\n\tpadding: 0 20px;\r\n}\r\n.movie-item {\r\n\tborder: 1px solid #ddd;\r\n\tborder-radius: 8px;\r\n\tpadding: 15px;\r\n\tcursor: pointer;\r\n\ttransition: transform 0.2s, box-shadow 0.2s;\r\n\tbox-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);\r\n\theight: 100%;\r\n\tdisplay: flex;\r\n\tflex-direction: column;\r\n}\r\n.movie-item:hover {\r\n\ttransform: translateY(-5px);\r\n\tbox-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);\r\n}\r\n.tagline {\r\n\tcolor: #666;\r\n\tfont-style: italic;\r\n\tflex-grow: 1;\r\n}\r\n.rating {\r\n\tcolor: #e67e22;\r\n\tfont-weight: bold;\r\n\tmargin-top: auto;\r\n}\r\n\r\n/* Media queries for responsive design */\r\n@media screen and (max-width: 1200px) {\r\n\t.movie-list {\r\n\t\tgrid-template-columns: repeat(\r\n\t\t\t3,\r\n\t\t\t1fr\r\n\t\t); /* 3 columns on medium-large screens */\r\n\t}\r\n}\r\n\r\n@media screen and (max-width: 900px) {\r\n\t.movie-list {\r\n\t\tgrid-template-columns: repeat(2, 1fr); /* 2 columns on medium screens */\r\n\t}\r\n}\r\n\r\n@media screen and (max-width: 600px) {\r\n\t.movie-list {\r\n\t\tgrid-template-columns: 1fr; /* 1 column on mobile */\r\n\t}\r\n\th1 {\r\n\t\tfont-size: 1.8rem;\r\n\t}\r\n}")
 ;(function(){
 "use strict";
 
